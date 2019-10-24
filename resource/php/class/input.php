@@ -16,7 +16,7 @@ public function viewAll(){
     $datas= $pdo->fetchAll(PDO::FETCH_OBJ);
     echo '<table class="table tavle-primary">';
     echo '<thead>';
-    echo '<th> Name </th> <th> Rate </th> <th> Date </th>';
+    echo '<th> Name </th> <th> Rate </th> <th> Q1 </th> <th> Q2 </th> <th> Q3 </th> <th> Q4 </th> <th> Q5 </th> <th> Date </th>';
     echo '</thead>';
     foreach ($datas as $data) {
 
@@ -24,6 +24,11 @@ public function viewAll(){
 
       echo '<td>'.$data->name.'</td>';
       echo '<td>'.$data->rate.'</td>';
+      echo '<td>'.$data->A1.'</td>';
+      echo '<td>'.$data->A2.'</td>';
+      echo '<td>'.$data->A3.'</td>';
+      echo '<td>'.$data->A4.'</td>';
+      echo '<td>'.$data->A5.'</td>';
       echo '<td>'.$data->date.'</td>';
 
 

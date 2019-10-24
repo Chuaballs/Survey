@@ -3,7 +3,7 @@ session_start();
 require 'resource\php\class\insert.php';
 
 if(!empty($_POST)){
-$insert = new insert($_POST['name'],$_POST['rate'],$_POST['date']);
+$insert = new insert($_POST['name'],$_POST['rate'],$_POST['RB1'],$_POST['RB2'],$_POST['RB3'],$_POST['RB4'],$_POST['RB5'],$_POST['date']);
 $insert->insert();
 }
 
@@ -46,41 +46,41 @@ $insert->insert();
     <tr>
       <th scope="row">1</th>
       <td>The food is served hot and fresh</td>
-      <td><input type="radio" name="A1" value="A"></td>
-      <td><input type="radio" name="A1" value="N"></td>
-      <td><input type="radio" name="A1" value="D"></td>
+      <td><input type="radio" name="RB1" value="A"></td>
+      <td><input type="radio" name="RB1" value="N"></td>
+      <td><input type="radio" name="RB1" value="D"></td>
 
     </tr>
     <tr>
       <th scope="row">2</th>
       <td>The menu has a good variety of items</td>
-      <td><input type="radio" name="A2" value="A"></td>
-      <td><input type="radio" name="A2" value="N"></td>
-      <td><input type="radio" name="A2" value="D"></td>
+      <td><input type="radio" name="RB2" value="A"></td>
+      <td><input type="radio" name="RB2" value="N"></td>
+      <td><input type="radio" name="RB2" value="D"></td>
 
     </tr>
     <tr>
       <th scope="row">3</th>
       <td>The quality of food is excellent</td>
-      <td><input type="radio" name="A3" value="A"></td>
-      <td><input type="radio" name="A3" value="N"></td>
-      <td><input type="radio" name="A3" value="D"></td>
+      <td><input type="radio" name="RB3" value="A"></td>
+      <td><input type="radio" name="RB3" value="N"></td>
+      <td><input type="radio" name="RB3" value="D"></td>
 
     </tr>
     <tr>
       <th scope="row">4</th>
       <td>The food is tasty and flavorful</td>
-      <td><input type="radio" name="A4" value="A"></td>
-      <td><input type="radio" name="A4" value="N"></td>
-      <td><input type="radio" name="A4" value="D"></td>
+      <td><input type="radio" name="RB4" value="A"></td>
+      <td><input type="radio" name="RB4" value="N"></td>
+      <td><input type="radio" name="RB4" value="D"></td>
 
     </tr>
     <tr>
       <th scope="row">5</th>
       <td>The food is a good value for the dollar</td>
-      <td><input type="radio" name="A5" value="A"></td>
-      <td><input type="radio" name="A5" value="N"></td>
-      <td><input type="radio" name="A5" value="D"></td>
+      <td><input type="radio" name="RB5" value="A"></td>
+      <td><input type="radio" name="RB5" value="N"></td>
+      <td><input type="radio" name="RB5" value="D"></td>
 
     </tr>
   </tbody>
