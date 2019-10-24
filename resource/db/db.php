@@ -1,7 +1,7 @@
 <?php
-class DB1{
+class db{
   public $host = 'localhost';
-  public $dbname = 'test';
+  public $dbname = 'survey';
   public $user = 'root';
   public $pass = '';
   public $pdo = null;
